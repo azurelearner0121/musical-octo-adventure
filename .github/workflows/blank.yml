@@ -47,7 +47,7 @@ jobs:
            echo Hello, world!
            cat README.md
       - name: Run a one-line script
-        if: ${{ github.ref }} == 'dev'
+        if:  ${{ github.ref == 'refs/heads/dev' }}
         run: |
            echo Hello, dev!
            
