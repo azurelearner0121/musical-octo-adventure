@@ -36,8 +36,8 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
         with:
-         ref: ${{ github.event.inputs.branch }}
-         # ref: ${{ github.ref }}
+         #ref: ${{ github.event.inputs.branch }}
+          ref: ${{ github.ref }}
       
 
       # Runs a single command using the runners shell
