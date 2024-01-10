@@ -38,6 +38,7 @@ jobs:
         with:
          #ref: ${{ github.event.inputs.branch }}
           ref: ${{ github.ref }}
+          
       
 
       # Runs a single command using the runners shell
@@ -45,5 +46,10 @@ jobs:
         run: |
            echo Hello, world!
            cat README.md
+      - name: Run a one-line script
+        if: ${{ github.ref }} == 'dev'
+        run: |
+           echo Hello, dev!
+           
 
 
