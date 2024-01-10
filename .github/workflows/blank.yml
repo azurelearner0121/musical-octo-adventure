@@ -10,6 +10,8 @@ on:
      - main
      - dev
      - qa
+    paths:
+      - '**/*'
 
   pull_request:
     branches: [ "main" ]
